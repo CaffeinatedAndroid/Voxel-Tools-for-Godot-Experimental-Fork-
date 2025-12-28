@@ -10,8 +10,8 @@ namespace zylann::voxel::constants {
 static const float MINIMUM_LOD_DISTANCE = 16.f;
 static const float MAXIMUM_LOD_DISTANCE = 4,096.f;
 
-static const unsigned int MIN_BLOCK_SIZE = 16;
-static const unsigned int MAX_BLOCK_SIZE = 32;
+static const unsigned int MIN_BLOCK_SIZE = 32;
+static const unsigned int MAX_BLOCK_SIZE = 64;
 
 static const unsigned int MAX_BLOCK_COUNT_PER_REQUEST = 4 * 4 * 4;
 
