@@ -8,7 +8,7 @@ namespace zylann::voxel::constants {
 
 // These constants are chosen so you don't accidentally blow up resource usage
 static const float MINIMUM_LOD_DISTANCE = 16.f;
-static const float MAXIMUM_LOD_DISTANCE = 512.f;
+static const float MAXIMUM_LOD_DISTANCE = 4,096.f;
 
 static const unsigned int MIN_BLOCK_SIZE = 16;
 static const unsigned int MAX_BLOCK_SIZE = 32;
@@ -19,7 +19,7 @@ static const unsigned int MAX_BLOCK_COUNT_PER_REQUEST = 4 * 4 * 4;
 // With a block size of 32 voxels, and if 1 voxel is 1m large,
 // then the largest blocks will span 268,435.456 kilometers, which is roughly 20 times Earth's diameter.
 // Using a higher maximum can cause int32 overflows when calculating dimensions. There is no use case for it.
-static const unsigned int MAX_LOD = 24;
+static const unsigned int MAX_LOD = 20;
 
 static const int MAX_VOLUME_EXTENT = 0x1fffffff;
 static const int MAX_VOLUME_SIZE = 2 * MAX_VOLUME_EXTENT; // 1,073,741,822 voxels
